@@ -84,7 +84,6 @@ h2{
 
 }
 
-
 .content{
     text-align: center;
     max-width: 90%;
@@ -125,10 +124,50 @@ h2{
     background-color: #545454;
 }
 
+.text{
+    max-width: 85%;
+    font-size: 1.05rem;
+    font-weight: 400;
+    font-family:'Poppins', sans-serif;
+    & .firstParagraphe{ 
+        font-size: 1.25rem;
+        margin: 2rem 0 1rem;
+        padding-left:15%;
+        max-width:80%;
+        text-align: center;
+        color: #064c00;
+        font-weight: 500;
+    }
+}
+
+.footer {
+    .dropdown-toggle{
+        background-color: transparent!important;
+        border: none;
+        color: #000!important;
+    }
+    & .dropdown-toggle:focus,
+    & .btn,
+    & .btn:focus{
+        outline: none!important;
+        box-shadow: 0 0 0 transparent!important;
+    }
+    
+}
+
+
 @media screen and (max-width:992px) {
    nav{
        background-color: #fff!important;
    }
+}
+
+@media screen and (min-width:760px) {
+    .footer{
+        display: flex;
+        justify-content: space-around;
+       
+    }
 }
 
 @media screen and (min-width:992px) {
