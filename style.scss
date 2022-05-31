@@ -32,96 +32,98 @@ $gree: #266e18;
 
 nav{
     background-color: $dark;
-    padding-top: 1.5rem;
-    .nav-link{
-        transition: 0.2s;
-        cursor: pointer;
-        text-transform: uppercase;
-        font-weight: 500;
-        padding-right:1rem;
-        &:hover{
-            background-color: $orange;
-        }
-        & a{
-            text-decoration: none;
-            padding: 1rem;
-            color: #fff;
-        }
-       
+    padding: 0.9rem!important;
+    .navbar-nav{
+        column-gap: 3.5rem;
+        row-gap:2rem;
+    }
+    & a{
+        text-decoration: none;
+        padding: 1rem;
+        color: #fff;
     }
     .dropdown .dropdown-toggle{
         text-decoration: none;
-        &:hover{
-            background-color: $orange;
-        }
         &:after{
             display: none;
         }
     }
-    .dropdown .dropdown-menu a:hover {
-        color: $orange;
+    .dropdown-item:hover{
+        color: $orange!important;
     }
-}
-.navbar-toggler {
-    background-color: #fff;
-    span{
-        font-weight: 600;
-        color :#212121;
-        &:hover{
-        color: $orange;
+    .navbar-toggler {
+        background-color: #fff;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        border: none;
+        &:focus{
+            box-shadow: 0 0 0 transparent;
+        }
+        span{
+            border-radius:5px;
+            font-weight: 600;
+            color :#212121;
+            background-color: rgb(238, 232, 232);
+            padding: 0 15px;
+            &:hover{
+            color: $orange;
+            }
         }
     }
 }
 
 .banner{
     width: 100%;
+    max-height:26rem!important;
+    object-fit: fill;
+}
+
+h2{
+    font-size:1.3rem;
+    max-width: 95%;
+
 }
 
 
 .content{
     text-align: center;
     max-width: 90%;
-    margin: auto;
     .card{
-        margin: auto;
-        margin-top:2rem;
-        width:225px;
-        text-align: center;
-        & a{
-            text-decoration: none;
-            & .cardImage{
-                height: 280px!important;
-                padding-top: 2rem;
-                & img {
-                    object-fit: contain;
-                    max-width:215px;
-                    margin:auto;
-                }
-            }
-            & .styleH3{
-                text-align: center;
-                text-decoration:none;
-                color: #064c00;
-                font-size: 1.1rem;
-                font-weight: 500;
-            }
-            & span {
-                background-color: $orange;
-                color:#fff;
-                padding: 3px 15px;
-                border-radius: 3px;
-
+        width:230px;
+        height: auto;
+        border: none;
+        & .cardImage{
+            height: 330px!important;
+            margin-top:1rem;
+            border: 1px solid rgb(204, 199, 199);
+            & img {
+                object-fit: contain;
+                max-width:215px;
             }
         }
-        & .price{
-                font-weight: 600;
-            }
+        & .styleH3{
+            color: rgb(124, 121, 121);
+            font-size: 1.1rem;
+            font-weight: 500;
+
+        }
+        & .newProduct {
+            background-color: $orange;
+            margin: 1rem 0;
+        }
+    & .price{
+            font-weight: 600;
+            color: #000;
+            font-size: 1.2rem;
+        }
     }
 }
 
-
-
-
+.lign{
+    border: 1px solid $grey;
+    padding-top: 3.5rem;
+    background-color: #545454;
+}
 
 @media screen and (max-width:992px) {
    nav{
@@ -132,5 +134,12 @@ nav{
 @media screen and (min-width:992px) {
     .dropdown-toggle{
         color: #fff!important;
+        padding: 1rem 0;
+        &:hover{
+            background-color: $orange;
+        }
+    }
+    .navbar-nav{
+        flex-wrap: wrap;
     }
 }

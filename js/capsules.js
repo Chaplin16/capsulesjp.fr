@@ -3,15 +3,15 @@ function carousel(selector, data) {
     let element = document.querySelector(selector);
     data.forEach(function(e) {
         element.innerHTML += 
-        `<div class="content">
-            <div class="card">
-                <a href="#">
-                    <span>NOUVEAU PRODUIT</span>
+        `<div class="content m-auto">
+            <div class="card m-auto mt-3 align-item-center">
+                <a class="text-decoration-none" href=${e.linkPrestashop}>
                     <div class="cardImage">
+                        <p class="newProduct text-white rounded pt-1 pb-1 me-2 ms-2">NOUVEAU PRODUIT</p>
                         <img src="${e.link}" alt="${e.alt}">
                     </div>
-                    <h3 class="styleH3">${e.h3}<h3>
-                    <p class="price">${e.price}</p>
+                    <h3 class="styleH3 pt-2">${e.h3}<h3>
+                    <p class="price">${e.price}€</p>
                 </a>
             </div>
         </div>`;
@@ -21,7 +21,7 @@ function carousel(selector, data) {
         centerPadding: '0px',
         slidesToShow: 5,
         arrows: false,
-        speed:1300,
+        speed:1500,
         adaptiveHeight: true,
         autoplaySpeed:1200,
         autoplay: true,
@@ -40,7 +40,7 @@ function carousel(selector, data) {
                 settings: {
                     centerMode: true,
                     centerPadding: '0px',
-                    slidesToShow: 5
+                    slidesToShow: 3
                 }
            },
             {
@@ -49,7 +49,7 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '0px',
-                    slidesToShow: 4
+                    slidesToShow: 2
                 }
             },
             {
@@ -75,3 +75,4 @@ function carousel(selector, data) {
   }
   
 carousel(".carousel", capsulesProps);
+carousel(".secondCarousel", capsulesGener);
