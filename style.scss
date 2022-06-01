@@ -140,33 +140,76 @@ h2{
     }
 }
 
-.footer {
-    .dropdown-toggle{
-        background-color: transparent!important;
-        border: none;
-        color: #000!important;
+footer {
+    background-color: rgb(239, 239, 240);
+    .footer {
+        .dropdown-toggle{
+            background-color: transparent!important;
+            border: none;
+            color: #000!important;
+            &:after{
+                display: none;
+            }
+        }
+        & .dropdown-toggle:focus,
+        & .btn,
+        & .btn:focus{
+            outline: none!important;
+            box-shadow: 0 0 0 transparent!important;
+        }
+        .dropdown-item{
+            padding-left:0!important;
+        }
+        ul{
+            list-style: none;
+        }
     }
-    & .dropdown-toggle:focus,
-    & .btn,
-    & .btn:focus{
-        outline: none!important;
-        box-shadow: 0 0 0 transparent!important;
+    .aurore-creation-web{
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        border-top: 1px solid rgb(206, 202, 202);
+        & p, a {
+            color: rgb(114, 110, 110)!important;
+        }
     }
-    
 }
 
-
-@media screen and (max-width:992px) {
-   nav{
-       background-color: #fff!important;
-   }
-}
-
-@media screen and (min-width:760px) {
+@media screen and (min-width:900px) {
     .footer{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        & .icone{
+            display: none;
+        } 
+        .dropdown{
+            .portable{
+                display: none;
+            }
+            .ordi{
+                padding-left: 0!important;
+            }
+        }
        
+    }
+    .aurore-creation-web{
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer{
+        .ordi{
+            display: none;
+        }
+        .icone{
+            float:right;
+            padding-top:5px;
+            margin-right: 1rem;
+            margin-top:0.5rem;
+        }
     }
 }
 
@@ -181,4 +224,10 @@ h2{
     .navbar-nav{
         flex-wrap: wrap;
     }
+}
+
+@media screen and (max-width:992px) {
+   nav{
+       background-color: #fff!important;
+   }
 }
