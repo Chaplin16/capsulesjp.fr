@@ -7,11 +7,11 @@ function carousel(selector, data) {
             <div class="card m-auto mt-3 align-item-center">
                 <a class="text-decoration-none" href=${e.linkPrestashop}>
                     <div class="cardImage">
-                        <p class="newProduct text-white rounded pt-1 pb-1 me-2 ms-2">NOUVEAU PRODUIT</p>
+                        <h3 class="newProduct text-white fw-bold rounded pt-1 pb-1 me-2 ms-2">NOUVEAU PRODUIT</h3>
                         <img src="${e.link}" alt="${e.alt}">
                     </div>
-                    <h3 class="styleH3 pt-2">${e.h3}<h3>
-                    <p class="price">${e.price}€</p>
+                    <h4 class="styleH3 pt-2">${e.h3}<h4>
+                    <span class="price">${e.price}€</span>
                 </a>
             </div>
         </div>`;
@@ -19,7 +19,7 @@ function carousel(selector, data) {
     $(element).slick({
         centerMode: true,
         centerPadding: '0px',
-        slidesToShow: 5,
+        slidesToShow: 4,
         arrows: false,
         speed:1500,
         adaptiveHeight: true,
@@ -68,6 +68,15 @@ function carousel(selector, data) {
                     centerMode: true,
                     centerPadding: '0px',
                     slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
                 }
              }
          ]

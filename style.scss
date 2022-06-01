@@ -101,15 +101,17 @@ h2{
             }
         }
         & .styleH3{
-            color: rgb(124, 121, 121);
+            color: rgb(68, 67, 67);
             font-size: 1.1rem;
             font-weight: 500;
 
         }
         & .newProduct {
-            background-color: $orange;
+            background-color: rgb(236, 116, 46);
             margin: 1rem 0;
-            font-size: 0.9rem;;
+            font-size: 0.9rem;
+
+
         }
     & .price{
             font-weight: 600;
@@ -167,16 +169,17 @@ footer {
     }
     .aurore-creation-web{
         margin-top: 2rem;
-        font-size: 0.9rem;
-        border-top: 1px solid rgb(206, 202, 202);
+        font-size: 1rem;
+        border-top: 1px solid rgb(219, 216, 216);
         & p, a {
-            color: rgb(114, 110, 110)!important;
+            color: rgb(105, 102, 102)!important;
         }
     }
 }
 
 @media screen and (min-width:650px) {
-    .carousel .content .card{
+    .carousel .content .card,
+    .secondCarousel .content .card{
         width: 12rem;
         column-gap: 0.5rem;
         & .cardImage img{
@@ -186,7 +189,8 @@ footer {
 }
 
 @media screen and (min-width:900px) {
-    .carousel .content .card{
+    .carousel .content .card,
+    .secondCarousel .content .card{
         width: 14rem;
         column-gap: 0.5rem;
         object-fit: contain;

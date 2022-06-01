@@ -97,12 +97,12 @@ h2 {
   max-width: 180px;
 }
 .content .card .styleH3 {
-  color: rgb(124, 121, 121);
+  color: rgb(68, 67, 67);
   font-size: 1.1rem;
   font-weight: 500;
 }
 .content .card .newProduct {
-  background-color: #ea6e27;
+  background-color: rgb(236, 116, 46);
   margin: 1rem 0;
   font-size: 0.9rem;
 }
@@ -157,29 +157,33 @@ footer .footer ul {
 }
 footer .aurore-creation-web {
   margin-top: 2rem;
-  font-size: 0.9rem;
-  border-top: 1px solid rgb(206, 202, 202);
+  font-size: 1rem;
+  border-top: 1px solid rgb(219, 216, 216);
 }
 footer .aurore-creation-web p, footer .aurore-creation-web a {
-  color: rgb(114, 110, 110) !important;
+  color: rgb(105, 102, 102) !important;
 }
 
 @media screen and (min-width: 650px) {
-  .carousel .content .card {
+  .carousel .content .card,
+.secondCarousel .content .card {
     width: 12rem;
     column-gap: 0.5rem;
   }
-  .carousel .content .card .cardImage img {
+  .carousel .content .card .cardImage img,
+.secondCarousel .content .card .cardImage img {
     max-width: 215px !important;
   }
 }
 @media screen and (min-width: 900px) {
-  .carousel .content .card {
+  .carousel .content .card,
+.secondCarousel .content .card {
     width: 14rem;
     column-gap: 0.5rem;
     object-fit: contain;
   }
-  .carousel .content .card .cardImage img {
+  .carousel .content .card .cardImage img,
+.secondCarousel .content .card .cardImage img {
     max-width: 240px !important;
     margin: auto !important;
   }
