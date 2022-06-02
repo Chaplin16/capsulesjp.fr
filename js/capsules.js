@@ -7,7 +7,7 @@ function carousel(selector, data) {
             <div class="card m-auto mt-3 align-item-center">
                 <a class="text-decoration-none" href=${e.linkPrestashop}>
                     <div class="cardImage">
-                        <h3 class="newProduct text-white fw-bold rounded pt-1 pb-1 me-2 ms-2">NOUVEAU PRODUIT</h3>
+                        <h3 class="newProduct text-dark fw-bold rounded pt-1 pb-1 me-2 ms-2">NOUVEAU PRODUIT</h3>
                         <img src="${e.link}" alt="${e.alt}">
                     </div>
                     <h4 class="styleH3 pt-2">${e.h3}<h4>
