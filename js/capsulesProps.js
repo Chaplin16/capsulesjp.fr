@@ -28,13 +28,6 @@ const capsulesProps = [
         price:"12,00"
     },
     {
-        link:"images/capsules-champagne/capsules-proprietaire/capsules-champagne-GOUET-HENRY-Cor-C.jpg",
-        alt:"Capsules de champagne porprietaire de GOUET HENRY Capsules ",
-        h3:"GOUET HENRY Capsules ... ",
-        linkPrestashop:"https://jpcapsules.fr/jp-capsules/506-capsules-de-champagne-gouet-henry.html",
-        price:"5,00"
-    },
-    {
         link:"images/capsules-champagne/capsules-proprietaire/capsules-champagne-PINEL-canotier.jpg",
         alt:"Capsules de champagne porprietaire de PINEL & FILS",
         h3:"PINEL & FILS Capsules ...",

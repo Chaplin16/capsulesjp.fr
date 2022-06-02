@@ -4,11 +4,11 @@ function carousel(selector, data) {
     data.forEach(function(e) {
         element.innerHTML += 
         `<div class="content m-auto">
-            <div class="card m-auto mt-3 align-item-center">
+            <div class="card m-auto mt-3 align-item-center" style="width:10rem; height:26rem;">
                 <a class="text-decoration-none" href=${e.linkPrestashop}>
-                    <div class="cardImage">
+                    <div class="cardImage mt-2" style="height:350px;">
                         <h3 class="newProduct text-dark fw-bold rounded pt-1 pb-1 me-2 ms-2">NOUVEAU PRODUIT</h3>
-                        <img src="${e.link}" alt="${e.alt}">
+                        <img style="width:180px;" src="${e.link}" alt="${e.alt}">
                     </div>
                     <h4 class="styleH3 pt-2">${e.h3}<h4>
                     <span class="price">${e.price}€</span>
