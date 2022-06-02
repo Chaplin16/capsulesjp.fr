@@ -14,13 +14,6 @@ const capsulesGener = [
         price:"7,50"
     },
     {
-        link:"images/capsules-champagne/capsules-generique/capsule-champagne-muselets-cepage-saveur.jpg",
-        alt:"Capsules de champagne generique de cepage saveurs",
-        h3:"CEPAGE SAVEURS",
-        linkPrestashop:"https://jpcapsules.fr/avril/482-cepage-saveur-capsules-de-champagne.html",
-        price:"1,50"
-    },
-    {
         link:"images/capsules-champagne/capsules-generique/capsule-champagne-muselets-collection-vinicole.jpg",
         alt:"Capsules de champagne generique de collection vinicole",
         h3:"COLLECTION VINICOLE",
