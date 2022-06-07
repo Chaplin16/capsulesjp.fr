@@ -1,0 +1,77 @@
+{
+    "api": "api.aurore.test",
+    "domainList" : [
+        {
+            "domain":"front.aurore.test",
+            "folder": "aurorecreationweb.fr"
+        },
+        {
+            "domain":"locationappartementaiguesmortes.test",
+            "folder": "locationappartementaiguesmortes.fr"
+        },
+        {
+            "domain":"jpcapsules.test",
+            "folder": "jpcapsules.fr"
+        },
+        {
+            "domain":"aiguesbike.test",
+            "folder": "aiguesbike.fr"
+        },
+        {
+            "domain":"nokisland.test",
+            "folder": "nokisland.fr"
+        },
+        {
+            "domain":"lentracte-aiguesmortes.test",
+            "folder": "lentracte-aiguesmortes.fr"
+        },
+        {
+            "domain":"cordonneriedesremparts.test",
+            "folder": "cordonneriedesremparts.fr"
+        },
+        {
+            "domain":"decoaiguesmortes.test",
+            "folder": "caze_oceane.fr"
+        },
+        {
+            "domain":"cordonneriedugrau.test",
+            "folder": "cordonneriedugrau.fr"
+        },
+        {
+            "domain":"nuitdefolie.test",
+            "folder": "nuitdefolie.fr"
+        },
+        {
+            "domain":"boutique-scenario.test",
+            "folder": "boutique-scenario.fr"
+        },
+        {
+            "domain":"verre-azur.test",
+            "folder": "verre-azur.com"
+        },
+        {
+            "domain":"jotraiteur.test",
+            "folder": "jotraiteur.fr"
+        },
+        {
+            "domain":"ophildessaveurs.test",
+            "folder": "ophildessaveurs.fr"
+        },
+        {
+            "domain":"david-barry.test",
+            "folder": "david-barry.fr"
+        },
+        {
+            "domain":"roudil-on-textile.test",
+            "folder": "roudil-on-textile.com"
+        },
+        {
+            "domain":"angelina-bike.test",
+            "folder": "angelina-bike.fr"
+        },
+        {
+            "domain":"capsules-jp.test",
+            "folder": "capsules-jp.fr"
+        }
+    ]
+}

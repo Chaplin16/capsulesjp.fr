@@ -158,6 +158,12 @@ footer .aurore-creation-web p, footer .aurore-creation-web a {
   color: rgb(105, 102, 102) !important;
 }
 
+@media screen and (max-width: 500px) {
+  .contact span {
+    max-width: 9rem !important;
+    padding-left: 1rem;
+  }
+}
 @media screen and (min-width: 650px) {
   .carousel .content .card,
 .secondCarousel .content .card {
